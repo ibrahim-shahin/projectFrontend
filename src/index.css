@@ -1,0 +1,115 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+body {
+  background: #fff;
+  font-family: "Poppins";
+}
+
+header {
+  background: #f1f1f1;
+}
+
+/* new project form */
+  div.error {
+    padding: 10px;
+    background: #ffefef;
+    border: 1px solid var(--error);
+    color: var(--error);
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+
+  input.error {
+    border: 1px solid var(--error);
+  }
+
+/* auth forms */
+form.signup {
+  max-width: 400px;
+  margin: 5% auto;
+}
+form.login  {
+  max-width: 400px;
+
+  margin: 8% auto;
+}
+
+.clear-icon {
+  z-index: 10;
+  font-size: x-large;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: hwb(0 50% 50%);
+}
+
+.clear-icon:hover {
+  color: #000;
+}
+#moreWidth {
+  width: 50%;
+}
+
+.select {
+  width: 45%;
+}
+
+@media (max-width: 800px) {
+  #moreWidth {
+    width: 60%;
+  }
+  #full {
+    width: 90%;
+  }
+  .select {
+    width: 90%;
+  }
+}
+
+@media (max-width: 680px) {
+  #moreWidth {
+    width: 70%;
+  }
+}
+
+@media (max-width: 560px) {
+  #moreWidth {
+    width: 100%;
+  }
+  #goCol {
+    flex-direction: column;
+  }
+  form.signup, form.login{
+    width: 90%;
+  }
+}
+
+.responsive-input {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-input {
+    max-width: 500px; /* Adjust for larger screens */
+  }
+}
+
+.dropzone {
+  border: 2px dashed #cccccc;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropzone:hover {
+  background-color: #f9f9f9;
+}
+
+.dropzone.active {
+  background-color: #e0f7fa
+}
